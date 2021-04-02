@@ -9,7 +9,7 @@ var S03 = Java.type("net.minecraft.network.play.server.S03PacketTimeUpdate");
 
 script.registerModule({
     name: "Ambience",
-    category: "Render", 
+    category: "World", 
     description: "change thing",
     settings: {
         mode: Setting.list({
