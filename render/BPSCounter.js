@@ -20,9 +20,7 @@ script.registerModule({
     BPSCounter.on("render2D", function(event) {
         var mcHeight = getScaledHeight();
         var mcWidth = getScaledWidth();
-
-		Fonts.font40.drawStringWithShadow("BPS: " + getBPS().toFixed(1),  mcWidth/2-19, mcHeight/2+12, 0xFFFFFF);
-
+	Fonts.font40.drawStringWithShadow("BPS: " + getBPS().toFixed(1),  mcWidth/2-19, mcHeight/2+12, 0xFFFFFF);
     });
 });
 
@@ -34,7 +32,7 @@ function getDistance(x,z) {
 
 function getBPS() {
     if(mc.thePlayer==null || mc.thePlayer.ticksExisted < 1) {
-		return 0;
+	return 0;
     }
 	return getDistance(mc.thePlayer.lastTickPosX,mc.thePlayer.lastTickPosZ) * (20 * mc.timer.timerSpeed);
 }
