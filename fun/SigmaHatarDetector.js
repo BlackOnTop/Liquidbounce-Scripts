@@ -18,10 +18,10 @@ script.registerModule({
         var packet = event.getPacket()
         if (packet instanceof S02PacketChat) {
 			var msg = packet.getChatComponent().getUnformattedText();
-			if (msg.contains("skidma")) {
+			if (msg.toLowerCase().contains("skidma")) {
 				mc.thePlayer.sendChatMessage("DID YOU JUST CALL SIGMA SKIDDED?!!??!??! WELL IT IS NOT. NOTHING IN SIGMA IS SKIDDED, THEY DIDNT STEAL MOON X FLY CODE IN FACT MOON X STOLE SIGMA FLY CODE BECAUSE IT WAS SO GOOD. YOUR JUST MAD THAT OMIKRON IS A BETTER CODER THAN YOU")
 			}
-            if (msg.contains("monero")) {
+            if (msg.toLowerCase().contains("monero")) {
 				mc.thePlayer.sendChatMessage("DID YOU JUST ACCUSE SIGMA OF BEING A MONERO MINER?!??!??!? IT IS NOT! YOU ARE JUST MAD, PORT 3333 WAS SOLELY FOR DEBUGGING AND OMIKRON IS THE BEST CODER EVER!!!!")
 			}
 		}
